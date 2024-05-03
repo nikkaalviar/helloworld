@@ -1,7 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <modelVersion>4.0.0</modelVersion> 
+  <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example.maven-project</groupId>
   <artifactId>maven-project</artifactId>
@@ -38,14 +39,14 @@
           <target>1.7</target>
         </configuration>
       </plugin>
-                    <plugin>
-                   <groupId>org.apache.maven.plugins</groupId>
-                   <artifactId>maven-war-plugin</artifactId>
-                   <version>3.3.2</version>
-                   <configuration>
-                       <failOnMissingWebXml>false</failOnMissingWebXml>
-                   </configuration>
-              </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
@@ -164,6 +165,12 @@
           <groupId>org.mortbay.jetty</groupId>
           <artifactId>jetty-maven-plugin</artifactId>
           <version>8.0.0.M1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>3.7.0.1746</version>
         </plugin>
       </plugins>
     </pluginManagement>
