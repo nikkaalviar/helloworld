@@ -170,7 +170,10 @@
         <plugin>
           <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
-          <version>3.7.0.1746</version>
+          <version>4.7.0.2644</version>
+          <configuration>
+            <report>true</report>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
